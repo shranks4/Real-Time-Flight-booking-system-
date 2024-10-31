@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.section {
+    position: relative;
+    height: 100vh;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #191a1e;
+}
+
+.section .section-center {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.booking-form {
+    background: #fff;
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-control {
+    background-color: #fff;
+    height: 55px;
+    padding: 10px 15px;
+    color: #191a1e;
+    border: 2px solid #dfe5e9;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.form-control:focus {
+    background-color: #f0f4f8;
+    border-color: #4fa3e3;
+}
+
+.form-label {
+    font-weight: 700;
+    font-size: 14px;
+    color: #4fa3e3;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #4fa3e3;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #357cbf;
+    transition: background-color 0.3s;
+}
+
+.booking-cta h1 {
+    font-size: 52px;
+    color: #4fa3e3;
+    font-weight: 400;
+}
+
+.booking-cta p {
+    font-size: 20px;
+    color: #191a1e;
+}

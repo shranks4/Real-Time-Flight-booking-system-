@@ -1,0 +1,190 @@
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+#flight-results {
+    margin: 40px auto;
+    max-width: 1100px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+
+.flight-segment {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    flex-basis: 100%;
+}
+
+.flight-segment:last-child {
+    border-bottom: none;
+}
+
+.airline-logo {
+    width: 60px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.flight-segment div {
+    max-width: 400px;
+}
+
+.flight-segment h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #2a2a2a;
+    font-weight: 600;
+}
+
+.flight-segment p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.flight-segment p strong {
+    color: #333;
+}
+
+
+.flight-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #e8f9f3;
+    border-radius: 12px;
+    padding: 15px;
+    min-width: 120px;
+    transition: background-color 0.3s ease;
+}
+
+.flight-price:hover {
+    background-color: #d4f2e9;
+}
+
+.flight-price h3 {
+    font-size: 26px;
+    color: #2a9d8f;
+    margin: 0;
+    font-weight: 700;
+}
+
+.flight-price small {
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+}
+
+.buy-button-container {
+    text-align: center;
+    flex-basis: 100%;
+    margin-top: 20px;
+}
+
+.buy-btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #e65b52;
+    box-shadow: 0 6px 15px rgba(255, 111, 97, 0.3);
+}
+
+.layovers {
+    background-color: #f7f7f7;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #555;
+    margin: 12px 0;
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .flight-price {
+        min-width: 100%;
+        margin-top: 15px;
+        padding: 12px 0;
+    }
+
+    .buy-btn {
+        width: 100%;
+        padding: 12px 0;
+        text-align: center;
+    }
+
+    .flight-segment {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.card h2 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.flight-segment div h5 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #555;
+}
