@@ -16,11 +16,11 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
 
-const apiKey = 'a935e77c17ba71d7aad48d68664e4e509ab27dd837998a63078d18880086876c';
+const apiKey = 'Your API Key';
 
 var razorpay = new Razorpay({
-    key_id: 'rzp_test_Xm2ZGPXd2yxlDH',
-    key_secret: 'DYHdq51FueV1kUMs8tnnUegp',
+    key_id: 'API Key',
+    key_secret: 'Api Key',
   });
 
 
